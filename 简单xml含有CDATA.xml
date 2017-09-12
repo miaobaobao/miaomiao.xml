@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--by miaobaobao-->
+<students>
+	<student id="1">
+		<name>周彦</name>
+		<age>20</age>
+		<numble>32</numble>
+		<QQ>463352127</QQ>
+		<CET_test_scores><![CDATA[score:505>425]]></CET_test_scores>
+	</student>
+	<student id="2">
+		<name>孙小中</name>
+		<age>21</age>
+		<numble>23</numble>
+		<QQ>864359959</QQ>
+		<CET_test_scores><![CDATA[score:480>425]]></CET_test_scores>
+	</student>
+	<student id="3">
+		<name>杨俊涛</name>
+		<age>21</age>
+		<numble>31</numble>
+		<QQ>761744650</QQ>
+		<CET_test_scores><![CDATA[score:510>425]]></CET_test_scores>
+	</student>
+	<student id="4">
+		<name>温程龙</name>
+		<age>20</age>
+		<numble>31</numble>
+		<QQ>854336555</QQ>
+		<CET_test_scores><![CDATA[score:510>425]]></CET_test_scores>
+	</student>
+	<student id="5">
+		<name>祁潇潇</name>
+		<age>19</age>
+		<numble>5</numble>
+		<QQ>444730222</QQ>
+		<CET_test_scores><![CDATA[score:580>425]]></CET_test_scores>
+	</student>
+	<student id="6">
+		<name>李嘉莉</name>
+		<age>20</age>
+		<numble>6</numble>
+		<QQ>1225736443</QQ>
+		<CET_test_scores><![CDATA[score:580>425]]></CET_test_scores>
+	</student>
+	<student id="7">
+		<name>黄锦锦</name>
+		<age>20</age>
+		<numble>7</numble>
+		<QQ>1368235528</QQ>
+		<CET_test_scores><![CDATA[score:500>425]]></CET_test_scores>
+	</student>
+	<student id="8">
+		<name>郝玉坤</name>
+		<age>20</age>
+		<numble>8</numble>
+		<QQ>510038211</QQ>
+		<CET_test_scores><![CDATA[score:500>425]]></CET_test_scores>
+	</student>
+</students>
