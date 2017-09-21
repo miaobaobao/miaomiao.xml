@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Library [
+	<!ELEMENT Library (Book,Member)>
+	<!ELEMENT Book (Title,Author,Price,Publisher,Cost)>	
+	<!ELEMENT Title (#PCDATA)>
+	<!ELEMENT Author (#PCDATA)>
+	<!ELEMENT Price (#PCDATA)>
+	<!ELEMENT Publisher (#PCDATA)>
+	<!ELEMENT Cost (#PCDATA)>
+	<!ELEMENT Member (Name,Address)>
+	<!ELEMENT Name (FirstName,MiddleName,LastName)>
+	<!ELEMENT FirstName (#PCDATA)>
+	<!ELEMENT MiddleName (#PCDATA)>
+	<!ELEMENT LastName (#PCDATA)>
+	<!ELEMENT Address (HouseNumber,Street,City)>
+	<!ELEMENT HouseNumber (#PCDATA)>
+	<!ELEMENT Street (#PCDATA)>
+	<!ELEMENT City (#PCDATA)>
+	<!ATTLIST Book BookId CDATA #REQUIRED>
+]>
+<Library>
+	<Book BookId="1">
+		<Title>大雄</Title>
+		<Author>喵宝宝</Author>
+		<Price>50</Price>
+		<Publisher>清华</Publisher>
+		<Cost>40</Cost>
+	</Book>
+
+	<Member>
+		<Name>
+			<FirstName>周</FirstName>
+			<MiddleName>子</MiddleName>
+			<LastName>彦</LastName>
+		</Name>
+		<Address>
+			<HouseNumber>7撞</HouseNumber>
+			<Street>东南路</Street>
+			<City>荆州</City>
+		</Address>
+	</Member>
+</Library>
