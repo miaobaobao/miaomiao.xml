@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="GB2312"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- definition of simple elements -->
+
+	<xs:element name="姓名">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="张三"/>
+				<xs:enumeration value="李四"/>
+				<xs:enumeration value="王二"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="性别">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="男|女"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="年龄">
+		<xs:simpleType>
+			<xs:restriction base="xs:byte">
+				<xs:minInclusive value="19"/>
+				<xs:maxInclusive value="21"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+<!-- definition of attributes -->
+
+	<xs:attribute name="学号">
+		<xs:simpleType>
+			<xs:restriction base="xs:byte">
+				<xs:minExclusive value="0"/>
+				<xs:maxInclusive value="4"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+<!-- definition of complex elements -->
+
+	<xs:element name="学生名册">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="学生" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="学生">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="姓名"/>
+				<xs:element ref="性别"/>
+				<xs:element ref="年龄"/>
+			</xs:sequence>
+			<xs:attribute ref="学号" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
